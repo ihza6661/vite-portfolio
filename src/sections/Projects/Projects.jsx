@@ -3,6 +3,8 @@ import viberr from '../../assets/viberr.png';
 import freshBurger from '../../assets/fresh-burger.png';
 import hipsster from '../../assets/hipsster.png';
 import fitLift from '../../assets/fitlift.png';
+import resume from '../../assets/resume.png';
+
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -10,7 +12,7 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        <ProjectCard
+        {/* <ProjectCard
           src={viberr}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Viberr"
@@ -27,12 +29,19 @@ function Projects() {
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Hipsster"
           p="Glasses Shop"
-        />
-        <ProjectCard
+        /> */}
+        {/* <ProjectCard
           src={fitLift}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="FitLift"
           p="Fitness App"
+        /> */}
+        <ProjectCard
+          src={resume}
+          link="https://ihza6661.netlify.app"
+          h3="Portfolio"
+          p="My Main Portfolio Website"
+          className={styles.resumeCard}
         />
       </div>
     </section>

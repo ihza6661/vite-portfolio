@@ -14,14 +14,11 @@ import igDark from '../../assets/ig-dark.png';
 import igLight from '../../assets/ig-light.png';
 import fbLight from '../../assets/fb-light.png';
 import fbDark from '../../assets/fb-dark.png';
-
-
-import CV from '../../assets/cv.pdf';
+// import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-
   const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
@@ -59,7 +56,7 @@ function Hero() {
           <a href="https://wa.me/089692070270/" target="_blank">
             <img src={whatsappIcon} alt="WhatsApp icon" />
           </a>
-          <a href="https://wa.me/089692070270/" target="_blank">
+          <a href="https://www.instagram.com/ihza6661/" target="_blank">
             <img src={instagramIcon} alt="Instagram icon" />
           </a>
           <a href="https://www.facebook.com/Casablancas6661/" target="_blank">
@@ -76,11 +73,10 @@ function Hero() {
           </a> */}
         </span>
         <p className={styles.description}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur sunt explicabo suscipit, eveniet debitis totam error maiores amet cum iusto.
         </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+        {/* <a href='https://www.instagram.com/ihza6661/' target='blank'>
+          <button className="hover">Follow</button>
+        </a> */}
       </div>
     </section>
   );
